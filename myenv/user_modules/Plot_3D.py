@@ -2,7 +2,12 @@ import numpy as np
 import plotly.graph_objects as go
 from sklearn.linear_model import LinearRegression
 
-def plot_3d(surface, scatter, title=None, xaxis_title=None, yaxis_title=None, zaxis_title=None, X=None, Y=None, x1_min=None, x1_max=None, x2_min=None, x2_max=None, x=None, y=None, z=None):
+def plot_3d(surface, scatter, title=None,
+            xaxis_title=None, yaxis_title=None, zaxis_title=None,
+            X=None, Y=None,
+            x1_min=None, x1_max=None,
+            x2_min=None, x2_max=None,
+            x=None, y=None, z=None):
 
     fig = go.Figure()
 
@@ -22,7 +27,7 @@ def plot_3d(surface, scatter, title=None, xaxis_title=None, yaxis_title=None, za
                     mode='markers',
                     marker=dict(
                         size=4,
-                        color='Black',
+                        color='Blue',
                         opacity=1)))
         
     fig.update_layout(title=title,
